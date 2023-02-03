@@ -9,3 +9,5 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+This revised version of the code is more readable as it has been divided into several parts for easier understanding. Initially, a check is performed to see if there is any event present. If not, the code returns the `TRIVIAL_PARTITION_KEY`. Subsequently, it verifies if the event.partitionKey is not present, and in that case, a hash is generated based on the event.
